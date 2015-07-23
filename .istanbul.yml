@@ -5,6 +5,7 @@ instrumentation:
     - '.idea/**'
     - 'build/**'
     - 'bin/**'
+    - 'repl.js'
   embed-source: false
   complete-copy: false
   include-all-sources: true
