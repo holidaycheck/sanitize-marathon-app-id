@@ -3,7 +3,7 @@
     "version": "0.0.0-dev",
     "description": "Sanitize marathon app ids.",
     "scripts": {
-        "pretest": "eslint .",
+        "posttest": "eslint .",
         "test": "npm run test:unit --coverage",
         "test:unit": "istanbul test _mocha test -- -R spec",
         "changelog": "pr-log"
