@@ -1,6 +1,6 @@
 'use strict';
 
-var sanitize = require('..'),
+var sanitize = require('../lib/sanitize'),
     expect = require('chai').expect;
 
 describe('sanitizeMarathonAppId', function () {
