@@ -13,8 +13,21 @@ $ npm install sanitize-marathon-app-id
 
 ## Usage
 
+### Programmatic usage
+
 ```js
 var sanitize = require('sanitize-marathon-app-id');
 
 var appId = sanitize('FOO_λ_BAR_1.0.0'); // → foo-bar-1-0-0
+```
+
+### CLI
+
+```
+$ sanitize-marathon-app-id.js --help
+
+  Sanitize marathon app ids.
+
+  Usage
+    sanitize-marathon-app-id <input>
 ```

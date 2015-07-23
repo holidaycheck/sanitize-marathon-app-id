@@ -4,6 +4,7 @@ instrumentation:
   excludes:
     - '.idea/**'
     - 'build/**'
+    - 'bin/**'
   embed-source: false
   complete-copy: false
   include-all-sources: true

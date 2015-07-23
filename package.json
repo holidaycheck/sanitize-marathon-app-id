@@ -12,6 +12,9 @@
         "type": "git",
         "url": "git@github.hc.ag:dragon/sanitize-marathon-app-id.git"
     },
+    "dependencies": {
+        "meow": "^3.3.0"
+    },
     "devDependencies": {
         "chai": "3.2.0",
         "eslint": "0.23.0",
@@ -22,6 +25,7 @@
         "pr-log": "1.3.0"
     },
     "main": "lib/sanitize.js",
+    "bin": "./bin/sanitize-marathon-app-id.js",
     "files": [
         "lib/"
     ],
