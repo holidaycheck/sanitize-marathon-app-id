@@ -24,7 +24,7 @@ var appId = sanitize('FOO_λ_BAR_1.0.0'); // → foo-bar-1-0-0
 ### CLI
 
 ```
-$ sanitize-marathon-app-id.js --help
+$ sanitize-marathon-app-id --help
 
   Sanitize marathon app ids.
 
