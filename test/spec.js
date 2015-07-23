@@ -5,20 +5,12 @@ var sanitize = require('..'),
 
 describe('sanitizeMarathonAppId', function () {
     describe('character substitution', function () {
-        it('should replace a dot with a hyphen', function () {
-            expect(sanitize('.')).to.equal('-');
-        });
-
         it('should replace a dot within text', function () {
             expect(sanitize('a.b')).to.equal('a-b');
         });
 
         it('should replace multiple dots', function () {
-            expect(sanitize('a.b.c.d.e.')).to.equal('a-b-c-d-e-');
-        });
-
-        it('should replace an underscore with a hyphen', function () {
-            expect(sanitize('_')).to.equal('-');
+            expect(sanitize('a.b.c.d.e')).to.equal('a-b-c-d-e');
         });
 
         it('should replace an underscores within text', function () {
@@ -26,11 +18,11 @@ describe('sanitizeMarathonAppId', function () {
         });
 
         it('should replace multiple underscores', function () {
-            expect(sanitize('a_b_c_d_e_')).to.equal('a-b-c-d-e-');
+            expect(sanitize('a_b_c_d_e')).to.equal('a-b-c-d-e');
         });
 
         it('should work with any combination of different non-allowed characters', function () {
-            expect(sanitize('a.b_c.d_e.')).to.equal('a-b-c-d-e-');
+            expect(sanitize('a.b_c.d_e')).to.equal('a-b-c-d-e');
         });
     });
 
@@ -59,6 +51,10 @@ describe('sanitizeMarathonAppId', function () {
 
             expect(sanitize(pileOfPoo)).to.be.empty;
         });
+    });
+
+    it('should remove any separator at the beginning or end', function () {
+        expect(sanitize('.foo_bar_')).to.equal('foo-bar');
     });
 
     it('should work with the combination of multiple cases', function () {

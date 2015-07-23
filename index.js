@@ -17,7 +17,8 @@ function isAllowedInAppId(character) {
 }
 
 module.exports = function sanitize(text) {
-    var moreThanOneSeparatorSymbol = new RegExp(separatorSymbol + '{2,}', 'g');
+    var moreThanOneSeparatorSymbol = new RegExp(separatorSymbol + '{2,}', 'g'),
+        separatorAtStartOrEnd = new RegExp('^' + separatorSymbol + '|' + separatorSymbol + '$', 'g');
 
     return text
         .toLowerCase()
@@ -25,5 +26,6 @@ module.exports = function sanitize(text) {
         .map(substituteCharacter)
         .filter(isAllowedInAppId)
         .join('')
-        .replace(moreThanOneSeparatorSymbol, separatorSymbol);
+        .replace(moreThanOneSeparatorSymbol, separatorSymbol)
+        .replace(separatorAtStartOrEnd, '');
 };
