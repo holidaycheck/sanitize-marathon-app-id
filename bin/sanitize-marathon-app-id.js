@@ -16,5 +16,6 @@ var meow = require('meow'),
 if (!inputText) {
     cli.showHelp();
 } else {
+    /* eslint-disable no-console */
     console.log(sanitize(cli.input[0]));
 }
