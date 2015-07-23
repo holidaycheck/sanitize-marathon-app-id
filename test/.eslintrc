@@ -1,0 +1,16 @@
+{
+    "env": {
+        "mocha": true
+    },
+
+    "plugins": [ "eslint-plugin-mocha" ],
+
+    "rules": {
+        "max-statements": 0,
+        "no-unused-expressions": 0,
+        "max-nested-callbacks": [2, 5],
+
+        "mocha/no-exclusive-tests": 2,
+        "mocha/handle-done-callback": 2
+    }
+}
