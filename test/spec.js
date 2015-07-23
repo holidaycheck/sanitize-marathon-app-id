@@ -42,15 +42,18 @@ describe('sanitizeMarathonAppId', function () {
 
     describe('non-allowed, non-substitutable characters', function () {
         it('should remove any non-allowed character which is not substitutable', function () {
-            expect(sanitize('πӠچ')).to.be.empty;
             expect(sanitize('fooλbar')).to.equal('foobar');
         });
 
         it('should remove characters outside of the basic multilingual unicode plane', function () {
-            var pileOfPoo = '\uD83D\uDCA9';
+            var pileOfPoo = 'a\uD83D\uDCA9';
 
-            expect(sanitize(pileOfPoo)).to.be.empty;
+            expect(sanitize(pileOfPoo)).to.be.equal('a');
         });
+    });
+
+    it('should reject invalid results (empty strings)', function () {
+        expect(sanitize.bind(null, '')).to.throw('\'\' is not a valid marathon app id.');
     });
 
     it('should remove any separator at the beginning or end', function () {
