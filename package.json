@@ -1,6 +1,6 @@
 {
     "name": "sanitize-marathon-app-id",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Sanitize marathon app ids.",
     "scripts": {
         "posttest": "eslint .",
