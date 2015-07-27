@@ -14,7 +14,8 @@
         "url": "git://github.com/holidaycheck/sanitize-marathon-app-id.git"
     },
     "dependencies": {
-        "meow": "^3.3.0"
+        "meow": "^3.3.0",
+        "ramda": "^0.17.1"
     },
     "devDependencies": {
         "chai": "3.2.0",
