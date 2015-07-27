@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.hc.ag:dragon/sanitize-marathon-app-id.git"
+        "url": "git://github.com/holidaycheck/sanitize-marathon-app-id.git"
     },
     "dependencies": {
         "meow": "^3.3.0"
@@ -18,7 +18,6 @@
     "devDependencies": {
         "chai": "3.2.0",
         "eslint": "0.23.0",
-        "eslint-config-holidaycheck": "git+ssh://git@github.hc.ag/QualityIndicators/eslint-config-holidaycheck#master",
         "eslint-plugin-mocha": "0.4.0",
         "istanbul": "0.3.17",
         "mocha": "2.2.5",
