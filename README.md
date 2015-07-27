@@ -1,4 +1,4 @@
-[![NPM Version](https://img.shields.io/npm/vsanitize-marathon-app-id .svg?style=flat)](https://www.npmjs.org/package/sanitize-marathon-app-id)
+[![NPM Version](https://img.shields.io/npm/vsanitize-marathon-app-id.svg?style=flat)](https://www.npmjs.org/package/sanitize-marathon-app-id)
 [![Build Status](https://img.shields.io/travis/holidaycheck/sanitize-marathon-app-id/master.svg?style=flat)](https://travis-ci.org/holidaycheck/sanitize-marathon-app-id)
 [![Coverage Status](https://img.shields.io/coveralls/holidaycheck/sanitize-marathon-app-id.svg?style=flat)](https://coveralls.io/r/holidaycheck/sanitize-marathon-app-id)
 [![Dependencies](http://img.shields.io/david/holidaycheck/sanitize-marathon-app-id.svg?style=flat)](https://david-dm.org/holidaycheck/sanitize-marathon-app-id)
