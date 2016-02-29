@@ -20,7 +20,8 @@
     "devDependencies": {
         "chai": "3.3.0",
         "coveralls": "2.11.4",
-        "eslint": "1.6.0",
+        "eslint": "1.10.1",
+        "eslint-config-holidaycheck": "0.1.0",
         "eslint-plugin-mocha": "1.0.0",
         "istanbul": "0.3.22",
         "mocha": "2.3.3",
