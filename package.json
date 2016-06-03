@@ -22,7 +22,7 @@
         "coveralls": "2.11.9",
         "eslint": "2.11.1",
         "eslint-config-holidaycheck": "0.7.0",
-        "eslint-plugin-mocha": "2.2.0",
+        "eslint-plugin-mocha": "3.0.0",
         "istanbul": "0.4.3",
         "mocha": "2.5.3",
         "pr-log": "1.4.0"
